@@ -7,6 +7,10 @@ Bot Python Untuk Mendolod Video tiktok Secara Masal
 
 Cara Pengunaan
 
+
+```bash
+  git clone https://github.com/faiqxid/bulk-tiktok-downloader-no-wm.git
+```
 ```bash
   cd bulk-tiktok-downloader-no-wm
 ```
