@@ -9,7 +9,11 @@ Cara Pengunaan
 
 ```bash
   cd bulk-tiktok-downloader-no-wm
+```
+```bash
   pip install -r requirement.txt
+```
+```bash
   python tiktok.py
 ```
     
