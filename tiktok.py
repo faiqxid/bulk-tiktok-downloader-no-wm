@@ -47,7 +47,9 @@ with open(linkvidtt, "r") as linkvid:
         creator = response['formats']['creator']
         tittles = tittlesr.replace(" ", "_")  # Replace spaces with underscores
         valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
-        tittle = ''.join(c for c in tittles if c in valid_chars)
+        longtitle = ''.join(c for c in tittles if c in valid_chars)
+        if len(longtitle) > 100:
+            tittle = longtitle[:100]
         print(creator)
         print(tittlesr)
 
