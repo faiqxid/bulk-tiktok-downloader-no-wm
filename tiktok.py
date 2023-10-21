@@ -50,6 +50,8 @@ with open(linkvidtt, "r") as linkvid:
         longtitle = ''.join(c for c in tittles if c in valid_chars)
         if len(longtitle) > 100:
             tittle = longtitle[:100]
+        else:
+            tittle = longtitle
         print(creator)
         print(tittlesr)
 
