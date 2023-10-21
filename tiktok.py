@@ -57,7 +57,7 @@ with open(linkvidtt, "r") as linkvid:
             os.makedirs('video')
 
         # Download the video and show a progress bar
-        video_filename = f"video/{tittle}.mp4"
+        video_filename = f"video/{tittles}.mp4"
         response = requests.get(video, stream=True)
 
         # Get the total size of the file from the content-length header
@@ -78,7 +78,7 @@ with open(linkvidtt, "r") as linkvid:
 
         # Write title and video URL to the Excel worksheet
         worksheet[f'A{i}'] = tittlesr
-        worksheet[f'B{i}'] = f'video/{tittle}.mp4'
+        worksheet[f'B{i}'] = f'video/{tittles}.mp4'
 
 # Save the workbook as an Excel file
 excel_filename = 'video_info.xlsx'
